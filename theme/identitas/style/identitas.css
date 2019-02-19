@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* para hacer referencia a fichero del tema [[pix:theme|logo.png]]
+
+/*Navegación de sección*/
+.course-content .section-navigation .mdl-left,
+.course-content .section-navigation .mdl-right{
+	display:none;
+}
