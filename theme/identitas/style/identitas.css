@@ -8,6 +8,12 @@
 	display:none;
 }
 
-#page-wrapper > nav.navbar.navbar-expand {
-	background-image:url('[[pix:theme|img/fondo_logo]]') no-repeat;
+#page-wrapper > nav.navbar.navbar-expand .site-name{display:none !important;}
+#page-wrapper > nav.navbar.navbar-expand {background-image:none;}
+
+/* Al menos 768 */
+@media (min-width: 768px {
+	#page-wrapper > nav.navbar.navbar-expand {
+		background:url('[[pix:theme|img/fondo_logo]]') no-repeat;
+	}	
 }
