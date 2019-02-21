@@ -19,3 +19,9 @@
 		background:url('[[pix:theme|img/fondo_logo]]') no-repeat;
 	}	
 }
+
+/* pág. ppal */
+.coursebox .content .courseimage img {
+    max-height: 400px;
+	height: auto;
+}
