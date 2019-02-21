@@ -8,6 +8,6 @@
 	display:none;
 }
 
-.page-wrapper nav.navbar.navbar-expand {
+#page-wrapper > nav.navbar.navbar-expand {
 	background-image:url('[[pix:theme|img/fondo_logo]]') no-repeat;
 }
