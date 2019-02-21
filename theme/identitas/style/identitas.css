@@ -9,6 +9,8 @@
 }
 
 #page-wrapper > nav.navbar.navbar-expand .site-name{display:none !important;}
+.path-site #page-wrapper > nav.navbar.navbar-expand .site-name{display:inline!important;}
+
 #page-wrapper > nav.navbar.navbar-expand {background-image:none;}
 
 /* Al menos 768 */
