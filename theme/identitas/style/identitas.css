@@ -37,15 +37,14 @@
 
 /*Title*/
 
-.is-seccion .sectionname{color:#ffffff;}
+.is-seccion.course-2.seccion-2 #region-main .sectionname{color:#ffffff;}
 .is-seccion.course-2 #region-main{
 	background-repeat: no-repeat !important;
    /* background-size: contain !important; */
    background-position: center top !important;
 }
 
-.is-seccion.course-2.seccion-0 #region-main,
-.is-seccion.course-2.seccion-1 #region-main{
-   background-image:url('[[pix:theme|img/top_modulo_1]]');
-}
+.is-seccion.course-2.seccion-2 #region-main{background-image:url('[[pix:theme|img/top_modulo_1]]');}
+.is-seccion.course-2.seccion-2 #region-main ul.topics{margin-top:55px !important;}
+
 /*** FIN ***/
