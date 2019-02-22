@@ -1,13 +1,8 @@
 @charset "UTF-8";
 
-/* para hacer referencia a fichero del tema [[pix:theme|logo.png]]
+/* para hacer referencia a fichero del tema [[pix:theme|logo.png]] */
 
-/*Navegación de sección*/
-.course-content .section-navigation .mdl-left,
-.course-content .section-navigation .mdl-right,
-.course-content .section-navigation.mdl-bottom{
-	display:none;
-}
+/*** Barra de navegación superior ***/
 
 #page-wrapper > nav.navbar.navbar-expand .site-name{display:none !important;}
 .path-site #page-wrapper > nav.navbar.navbar-expand .site-name{display:inline!important;}
@@ -21,9 +16,36 @@
 	}	
 }
 
-/* pág. ppal */
+/*** FIN ***/
+
+/*** Página después de login ***/
 .coursebox .content .courseimage img {
     max-width:100%;
 	max-height: 400px;
 	height: auto;
 }
+/*** FIN ***/
+
+/*** Contenido de módulos ***/
+
+/*Navegación de sección*/
+.course-content .section-navigation .mdl-left,
+.course-content .section-navigation .mdl-right,
+.course-content .section-navigation.mdl-bottom{
+	display:none;
+}
+
+/*Title*/
+
+.is-seccion .sectionname{color:#ffffff;}
+.is-seccion.course-2 #region-main{
+	background-repeat: no-repeat !important;
+   /* background-size: contain !important; */
+   background-position: center top !important;
+}
+
+.is-seccion.course-2.seccion-0 #region-main,
+.is-seccion.course-2.seccion-1 #region-main{
+   background-image:url('[[pix:theme|img/top_modulo_1]]');
+}
+/*** FIN ***/
