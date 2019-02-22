@@ -24,3 +24,13 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+
+/**
+ * Initialize page
+ * @param moodle_page $page
+ */
+function theme_identitas_page_init(moodle_page $page) {
+    global $section;
+	//Coloca en el body la seccion del curso actual
+    $page->add_body_class('seccion-'.$section);
+}

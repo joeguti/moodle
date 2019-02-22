@@ -4,7 +4,8 @@
 
 /*Navegación de sección*/
 .course-content .section-navigation .mdl-left,
-.course-content .section-navigation .mdl-right{
+.course-content .section-navigation .mdl-right,
+.course-content .section-navigation.mdl-bottom{
 	display:none;
 }
 
