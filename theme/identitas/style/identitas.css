@@ -40,11 +40,11 @@
 .is-seccion.course-2.seccion-2 #region-main .sectionname{display:none;color:#ffffff;}
 .is-seccion.course-2 #region-main{
 	background-repeat: no-repeat !important;
-   /* background-size: contain !important; */
-   background-position: center top !important;
+   background-size: contain !important;
+   background-position: left top !important;
 }
 
 .is-seccion.course-2.seccion-2 #region-main{background-image:url('[[pix:theme|img/top_modulo_1]]');}
-.is-seccion.course-2.seccion-2 #region-main ul.topics{margin-top:125px !important;}
+.is-seccion.course-2.seccion-2 #region-main ul.topics{margin-top:8% !important;}
 
 /*** FIN ***/
