@@ -37,14 +37,20 @@
 
 /*Title*/
 
-.is-seccion.course-2.seccion-2 #region-main .sectionname{display:none;color:#ffffff;}
+.is-seccion.course-2 #region-main .sectionname{display:none;color:#ffffff;}
+.is-seccion.course-2 #region-main ul.topics{margin-top:8% !important;}
+
 .is-seccion.course-2 #region-main{
 	background-repeat: no-repeat !important;
-   background-size: contain !important;
-   background-position: left top !important;
+	background-size: contain !important;
+	background-position: left top !important;
 }
 
-.is-seccion.course-2.seccion-2 #region-main{background-image:url('[[pix:theme|img/top_modulo_1]]');}
-.is-seccion.course-2.seccion-2 #region-main ul.topics{margin-top:8% !important;}
+.is-seccion.course-2.seccion-1 #region-main{background-image:url('[[pix:theme|img/cursos/2/img_intro]]');}
+.is-seccion.course-2.seccion-2 #region-main{background-image:url('[[pix:theme|img/cursos/2/img_mol_1]]');}
+.is-seccion.course-2.seccion-3 #region-main{background-image:url('[[pix:theme|img/cursos/2/img_mol_2]]');}
+.is-seccion.course-2.seccion-4 #region-main{background-image:url('[[pix:theme|img/cursos/2/img_mol_3]]');}
+.is-seccion.course-2.seccion-5 #region-main{background-image:url('[[pix:theme|img/cursos/2/img_mol_4]]');}
+
 
 /*** FIN ***/
