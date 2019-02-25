@@ -32,7 +32,7 @@ defined('MOODLE_INTERNAL') || die();
 function theme_identitas_page_init(moodle_page $page) {
 	global $section;
 	//Coloca en el body la seccion del curso actual
-    if (is_string($section)){
+    if (is_number($section)){
 		//print_r(section,true);
         $page->add_body_class('is-seccion');
         $page->add_body_class('seccion-'.$section);
