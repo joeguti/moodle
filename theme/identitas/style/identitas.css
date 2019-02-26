@@ -54,4 +54,9 @@
 .is-seccion.course-2.seccion-5 #region-main{background-image:url('[[pix:theme|img/cursos/2/img_mol_4]]');}
 
 
+/*** Cuestionarios ***/
+/* Seleccione una, seleccione varias */
+
+.multichoice .ablock .prompt {display:none}
+
 /*** FIN ***/
