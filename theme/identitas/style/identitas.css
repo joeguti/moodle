@@ -57,6 +57,7 @@
 /*** Cuestionarios ***/
 /* Seleccione una, seleccione varias */
 
-.multichoice .ablock .prompt {display:none}
+.multichoice .ablock .prompt,
+.truefalse .ablock .prompt{display:none}
 
 /*** FIN ***/
