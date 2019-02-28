@@ -37,9 +37,11 @@
 }
 
 /*Title*/
-
+/* curso 2 */
+.course-2 .page-header-headings h1{display:none;} /* título del curso */
 .is-seccion.course-2 #region-main .sectionname{display:none;color:#ffffff;}
 .is-seccion.course-2 #region-main ul.topics{margin-top:8% !important;}
+.is-seccion.course-2.seccion-0 #region-main ul.topics{margin-top:inherit !important;}
 
 .is-seccion.course-2 #region-main{
 	background-repeat: no-repeat !important;
