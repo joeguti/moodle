@@ -41,8 +41,13 @@
 .course-2 .page-header-headings h1{display:none;} /* título del curso */
 .is-seccion.course-2 #region-main .sectionname{display:none;color:#ffffff;}
 .is-seccion.course-2 #region-main ul.topics{margin-top:8% !important;}
-.is-seccion.course-2.seccion-0 #region-main ul.topics{margin-top:inherit !important;}
-.is-seccion.course-2.seccion-0 .course-content .section-summary {border: 0px solid #ffffff;border-bottom:1px solid #dee2e6; }
+/*lista de secciones del curso */
+.is-seccion.seccion-0 #region-main ul.topics{margin-top:inherit !important;}
+.is-seccion.seccion-0 .course-content .section-summary {
+	border-bottom:1px solid #dee2e6; 
+	padding: 15px;
+	border-left: 10px solid #efefef;
+}
 
 .is-seccion.course-2 #region-main{
 	background-repeat: no-repeat !important;
