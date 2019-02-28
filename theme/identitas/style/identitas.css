@@ -44,7 +44,7 @@
 /*lista de secciones del curso */
 .is-seccion.seccion-0 #region-main ul.topics{margin-top:inherit !important;}
 .is-seccion.seccion-0 .course-content .section-summary {
-	border-bottom:1px solid #dee2e6; 
+	border-bottom:1px solid #dee2e6 !important; 
 	padding: 15px;
 	border-left: 10px solid #efefef;
 }
