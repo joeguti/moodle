@@ -12,7 +12,7 @@
 /* Al menos 768 */
 @media (min-width: 768px) {
 	#page-wrapper > nav.navbar.navbar-expand {
-		background:url('[[pix:theme|img/fondo_logo]]') no-repeat;
+		background:url('[[pix:theme|img/fondo-logo]]') no-repeat;
 	}	
 }
 
