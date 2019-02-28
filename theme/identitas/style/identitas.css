@@ -28,7 +28,7 @@
 
 /*** Contenido de módulos ***/
 
-/*Navegación de sección*/
+/*Navegación de sección */
 .course-content .section-navigation .mdl-left,
 .course-content .section-navigation .mdl-right,
 .course-content .section-navigation.mdl-bottom,
@@ -42,7 +42,7 @@
 .is-seccion.course-2 #region-main .sectionname{display:none;color:#ffffff;}
 .is-seccion.course-2 #region-main ul.topics{margin-top:8% !important;}
 .is-seccion.course-2.seccion-0 #region-main ul.topics{margin-top:inherit !important;}
-.is-seccion.course-2.seccion-0 .course-content .section-summary {border: 0px solid #ffffff;border-bottom:1px solid #dee2e6;}
+.is-seccion.course-2.seccion-0 .course-content .section-summary {border: 0px solid #ffffff;border-bottom:1px solid #dee2e6; }
 
 .is-seccion.course-2 #region-main{
 	background-repeat: no-repeat !important;
