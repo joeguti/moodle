@@ -305,11 +305,12 @@ function forum_delete_instance($id) {
 
     forum_tp_delete_read_records(-1, -1, -1, $forum->id);
 
+    forum_grade_item_delete($forum);
+
+    // We must delete the module record after we delete the grade item.
     if (!$DB->delete_records('forum', array('id'=>$forum->id))) {
         $result = false;
     }
-
-    forum_grade_item_delete($forum);
 
     return $result;
 }
@@ -4029,7 +4030,7 @@ function forum_print_discussion_header(&$post, $forum, $group = -1, $datestring 
     }
 
     echo '<td class="lastpost">';
-    $usedate = (empty($post->created)) ? $post->timemodified : $post->created;
+    $usedate = (empty($post->timemodified)) ? $post->created : $post->timemodified;
     $parenturl = '';
     $usermodified = new stdClass();
     $usermodified->id = $post->usermodified;
@@ -4662,10 +4663,6 @@ function forum_update_post($newpost, $mform, $unused = null) {
     }
     $post->modified = time();
 
-    // Last post modified tracking.
-    $discussion->timemodified = $post->modified;
-    $discussion->usermodified = $post->userid;
-
     if (!$post->parent) {   // Post is a discussion starter - update discussion title and times too
         $discussion->name      = $post->subject;
         $discussion->timestart = $post->timestart;
@@ -4678,6 +4675,7 @@ function forum_update_post($newpost, $mform, $unused = null) {
     $post->message = file_save_draft_area_files($newpost->itemid, $context->id, 'mod_forum', 'post', $post->id,
             mod_forum_post_form::editor_options($context, $post->id), $post->message);
     $DB->update_record('forum_posts', $post);
+    // Note: Discussion modified time/user are intentionally not updated, to enable them to track the latest new post.
     $DB->update_record('forum_discussions', $discussion);
 
     forum_add_attachment($post, $forum, $cm, $mform);
@@ -7611,7 +7609,7 @@ function forum_cm_info_view(cm_info $cm) {
 
     if (forum_tp_can_track_forums()) {
         if ($unread = forum_tp_count_forum_unread_posts($cm, $cm->get_course())) {
-            $out = '<span class="unread"> <a href="' . $cm->url . '">';
+            $out = '<span class="unread"> <a href="' . $cm->url . '#unread">';
             if ($unread == 1) {
                 $out .= get_string('unreadpostsone', 'forum');
             } else {
